@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#RendaFixa">Renda Fixa</a></li>
+        <li class="tab col s3 "><a href="#MyOp">My Op</a></li>
+        <li class="tab col s3"><a  href="#VendaCobertaAvancada">Venda Coberta Avançada</a></li>
+      </ul>
+    </div>
+
+    <div id="RendaFixa" class="col s12">Renda Fixa
+
+        <body>
+
+            <div class="container">
+                <h1 class="center">Trava Renda Fixa</h1>
+            
+                <div class="info-montagem">
+                    <table class="lefted bordered">
+                        <thead>
+                            <tr>
+                                <th> <label for="papel">Papel</label></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th><label for="papel">R$</label></th>    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    PETR4             
+                                </th>
+                                <th>
+                                    <label for="DtCompra">Data Compra:</label>
+                                    <input type="date" id="DtCompra" name="DtCompra" >
+                                    
+                                </th>
+                                <th><label for="compra">Compra</label></th>
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="preco_ativo" type="number" class="validate">
+                                        <label for="preco_ativo">Preço</label>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="qtd_ativo" type="number" class="validate">
+                                        <label for="qtd_ativo">Quantidades</label>
+                                    </div>
+
+                                </th>
+                                <th>4.567</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    PETR4             
+                                </th>
+                                <th>
+                                    <label for="DtVenda">Data Venda:</label>
+                                    <input type="date" id="DtVenda" name="DtVenda" >
+                                    
+                                </th>
+                                <th><label for="venda">Venda</label></th>
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="preco_ativo_venda" type="number" class="validate">
+                                        <label for="preco_ativo_venda">Preço</label>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="qtd_ativo_venda" type="number" class="validate">
+                                        <label for="qtd_ativo_venda">Quantidades</label>
+                                    </div>
+
+                                </th>
+                                <th>0,00</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="lefted bordered">
+                        <thead>
+                            <tr>
+                                
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>    
+                                    <div class="input-field col s6"></div>
+                                        <label for="select-opcao">CALL</label>  
+                                        <select class="browser-default" id="select-opcao">
+                                            <option value="1">PETRF256</option>
+                                            <option value="2">PETRG256</option>
+                                            <option value="3">PETRH256</option>
+                                        </select>
+                                </th>
+                                
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="strike_call" type="number" class="validate">
+                                        <label for="strike_call">Strike</label>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6"></div>
+                                        <label for="cb-compra-venda">Comprar/Vender</label>
+                                        <select class="browser-default" id="cb-compra-venda">
+                                            <option value="1">Venda</option>
+                                            <option value="2">Compra</option>
+                                        </select>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="premioe_call" type="number" class="validate">
+                                        <label for="premioe_call">Premio</label>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="qtd_call" type="number" class="validate">
+                                        <label for="qtd_call">Quantidades</label>
+                                    </div>
+                                </th>
+                                <th id="total_venda_opcao_call">144,00</th>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                    
+
+                    <table class="lefted bordered">
+                        <thead>
+                            <tr>
+                                
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>    
+                                    <div class="input-field col s6"></div>
+                                        <label for="select-opcao-put">PUT</label>  
+                                        <select class="browser-default" id="select-opcao-put">
+                                            <option value="1">PETRF256</option>
+                                            <option value="2">PETRG256</option>
+                                            <option value="3">PETRH256</option>
+                                        </select>
+                                </th>
+                                
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="strike_put" type="number" class="validate">
+                                        <label for="strike_put">Strike</label>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6"></div>
+                                        <label for="cb-compra-venda-put">Comprar/Vender</label>
+                                        <select class="browser-default" id="cb-compra-venda-put">
+                                            <option value="1">Venda</option>
+                                            <option value="2">Compra</option>
+                                        </select>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="premioe_call_put" type="number" class="validate">
+                                        <label for="premioe_call_put">Premio</label>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="input-field col s6">
+                                        <input id="qtd_put" type="number" class="validate">
+                                        <label for="qtd_put">Quantidades</label>
+                                    </div>
+                                </th>
+                                <th id="total_venda_opcao_put">100,00</th>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                
+            
+                <canvas id="myChart" width="110" height="30"></canvas>
+        
+
+
+
+                <ul class="informacoes left">
+                    <li>
+                        <i class="small material-icons icones">description</i>
+                        <i class="small material-icons icones">description</i>
+                        <i class="small material-icons icones">description</i>
+                        <span id="tamanho-frase">5</span> palavras
+                    </li>
+                    <li>
+                        <i class="small material-icons icones">query_builder</i>
+                        <span id="tempo-digitacao">10</span> segundos
+                    </li>
+                </ul>
+
+                <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
+
+                <div class="botoes">
+                    <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+                        <i class="material-icons">restore</i>
+                    </a>
+                    <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
+                        <i class="material-icons">assignment</i>
+                    </a>
+
+                    <a id="botao-grafico" class="btn-floating btn-large waves-effect waves-light black">
+                        <i class="material-icons">assignment</i>
+                    </a>
+                </div>
+
+                <ul class="center">
+                    <li><span id="contador-caracteres">0</span> ######</li>
+                    <li><span id="contador-palavras">0</span> *****</li>
+                </ul>
+
+                <section class="placar">
+                    <h3 class="center">Placar</h3>
+                    <table class="centered bordered">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>No. de palavras</th>
+                                <th>Remover</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <script src="js/jquery.js"></script>
+            <script src="js/materialize.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/placar.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.1/chart.min.js"></script>
+
+        </body>
+    </div>
+
+</div>
+<div id="MyOp" class="col s12">My Op  Em Desenvolvimento</div>
+<div id="VendaCobertaAvancada" class="col s12">Venda Coberta Avançada Em Desenvolvimento</div>
+
+</html>
